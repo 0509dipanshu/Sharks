@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sharks Store</title>
+
+	<link rel="stylesheet" type="text/css" href="store.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="main_1_js.js"></script>
+
+</head>
+<body style="background-color: black;"> <br>
+
+	<!---------------------------------------------------------------header------------------------------------------------------>
+
+	<div class="nav_bar">
+		<div class="search_box">
+			<a href="homepage.html"><image src="https://media.giphy.com/media/gKxxrUHEXFjzTWiPBd/giphy.gif" id="logo"></image></a>
+
+			<input type="text" name="search" id="search">
+			<span class="input-group-text"><i class="fa fa-search"></i></span>
+			<a class="s" href="homepage.html">
+				SHARKS
+			</a>
+		</div>
+		
+		<div class="menu-bar">
+			<ul>
+				<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>cart</a></li>
+				<li><a href="#">SIGN UP</a></li>
+				<li><a href="#">LOG IN</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!----------------------------------------------------------------------------------------------------------------------------->
+
+    <!----------------------------------------------------------image slideshow-------------------------------------------------------->
+
+    <div class="imagess"><center>
+        <img class="mySlides" src="https://46ba123xc93a357lc11tqhds-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/amazon-alexa-event-sept-2019.jpg">
+        <img class="mySlides" src="https://www.dubravcan.sk/images/banner-clothing.jpg" >
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/453942c164672e1cae5311fe1327614e_1528292302.jpg">
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/77ff7053be77b95e4e7d95d8a4256228_1529489617.jpg">
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/4bf1a90c99f70d5e486cf47d3315c51e_1528954757.jpeg">
+	</center>
+	</div>
+	<script>
+		var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+	</script>
+
+	<!----------------------------------------------------------------------------------------------------------------------------->
+
+	<!------------------------------------------------------------special places------------------------------------------------------->
+	
+	<hr class="gap">
+
+	<div class="heading">SPECIAL OFFERS</div>
+
+	<div class="block1">
+		<div class="imgtxt">
+		<img src="https://46ba123xc93a357lc11tqhds-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/amazon-alexa-event-sept-2019.jpg" class="sp-img">
+		<div class="middle1">
+			<div class="text"><image src="https://media.giphy.com/media/gKxxrUHEXFjzTWiPBd/giphy.gif" class="abc"></div>
+		</div>
+		</div>
+		<div class="button1">
+		<div class="button2">
+			<table cellpadding="30">
+			<form>
+				<tr><td><input type="button" value="OFFERS" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);" ></td></tr>
+				<tr><td><input type="button" value="PACKAGES" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="GUIDE" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+			</form>
+			</table>
+		</div>
+		</div>
+		
+	</div>
+
+	<div class="block2">
+		<div class="imgtxt">
+		<img src="https://www.dubravcan.sk/images/banner-clothing.jpg" class="sp-img">
+		<div class="middle2">
+			<div class="text"><image src="https://media.giphy.com/media/gKxxrUHEXFjzTWiPBd/giphy.gif" class="abc"></div>
+		</div>
+		</div>
+		<div class="button1">
+		<div class="button2">
+			<table cellpadding="30">
+			<form>
+				<tr><td><input type="button" value="OFFERS" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="PACKAGES" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="GUIDE" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+			</form>
+			</table>
+		</div>
+		</div>
+	</div>
+
+	<div class="block3">
+		<div class="imgtxt">
+		<img src="https://www.holidify.com/images/bgImages/GOA.jpg" class="sp-img">
+		<div class="middle3">
+			<div class="text"><image src="https://media.giphy.com/media/gKxxrUHEXFjzTWiPBd/giphy.gif" class="abc"></div>
+		</div>
+		</div>
+		<div class="button1">
+		<div class="button2">
+			<table cellpadding="30">
+			<form>
+				<tr><td><input type="button" value="OFFERS" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="PACKAGES" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="GUIDE" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+			</form>
+			</table>
+		</div>
+		</div>
+	</div>
+
+	<div class="block4">
+		<div class="imgtxt">
+		<img src="https://travelandleisureindia.in/wp-content/uploads/2018/12/Houseboat-Stays-in-Srinagar-Feature.jpg"  class="sp-img">
+		<div class="middle4">
+			<div class="text"><image src="https://media.giphy.com/media/gKxxrUHEXFjzTWiPBd/giphy.gif" class="abc"></div>
+		</div>
+		</div>
+		<div class="button1">
+		<div class="button2">
+			<table cellpadding="30">
+			<form>
+				<tr><td><input type="button" value="OFFERS" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="PACKAGES" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="GUIDE" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+			</form>
+			</table>
+		</div>
+		</div>
+	</div>
+
+
+	<hr class="gap">
+
+	<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+	<!--------------------------------------------------------------image slider--------------------------------------------------------------->
+
+	<!--div class="is">
+		<img class="mySlides" src="https://www.honeymoonbug.com/images/darjeeling-tour-package.jpg" >
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/453942c164672e1cae5311fe1327614e_1528292302.jpg">
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/77ff7053be77b95e4e7d95d8a4256228_1529489617.jpg">
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/4bf1a90c99f70d5e486cf47d3315c51e_1528954757.jpeg">
+	</div-->
+
+	<!------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<!----------------------------------------------------------------footer---------------------------------------------------------------------->
+
+	<section>
+		<div class="footer">
+			<div class="thk">
+				Thanks for Using Sharks
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-1">
+						<h1>Useful Links</h1>
+						<p>Privacy Policy</p>
+						<p>Terms of Use</p>
+						<p>Return Policy</p>
+						<p>Discount Coupons</p>
+					</div>
+					<div class="col-1">
+						<h1>Company</h1>
+						<p>About Us</p>
+						<p>Contact Us</p>
+						<p>Career</p>
+						<p>Affilate</p>
+                    </div>
+					<div class="col-1">
+						<h1>Follow Us On</h1>
+						<p><i class="fa fa-facebook-official"></i>Facebook</p>
+						<p><i class="fa fa-youtube-play"></i>Youtube</p>
+						<p><i class="fa fa-linkedin"></i>Linkedin</p>
+						<p><i class="fa fa-twitter"></i>Twitter</p>	
+					</div>
+					<div class="col-1 footer-image">
+						<h1>Download App</h1>
+						<a href=""><img src="app.jpg" width="42x" height="60px"></a>
+					</div>
+				</div>
+				<hr>
+		</div>
+	</div>
+    </section>
+
+</body>
+</html>
